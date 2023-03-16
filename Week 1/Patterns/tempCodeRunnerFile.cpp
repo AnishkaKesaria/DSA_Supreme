@@ -1,0 +1,2 @@
+if(col==n)
+            //     count--;
