@@ -82,6 +82,9 @@ void insertAtTail(Node* &head, Node* &tail, int data)
 
 Node* solve(Node* &head1, Node* &head2)
 {
+    if(head1 == NULL) return head2;
+    if(head2 == NULL) return head1;
+    
     //1 - REVERSE
     head1 = reverse(head1);
     head2 = reverse(head2);
