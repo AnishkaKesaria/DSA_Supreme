@@ -13,7 +13,7 @@ vector<int> nextSmaller(vector<int> &arr)
             s.pop();
         ans[i] = s.top();
         if(ans[i]==-1)
-            ans[i] = 6;
+            ans[i] = arr.size();
         s.push(i);
     }
     return ans;
