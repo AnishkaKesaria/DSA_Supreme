@@ -31,7 +31,7 @@ vector<int> solve(vector<int> &arr, int n, int k)
     //         result.push_back(0);
     // }
 
-    for(int i=k; i<n-1; i++)
+    for(int i=k; i<n; i++)
     {
         if(!q.empty())
             result.push_back(arr[q.front()]);
@@ -40,6 +40,7 @@ vector<int> solve(vector<int> &arr, int n, int k)
 
         while((i-q.front()>=k) && (!q.empty()))
             q.pop_front();
+            
         if(arr[i]<0)
             q.push_back(i);
     }
