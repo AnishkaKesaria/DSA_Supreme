@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void merge(int *left, int*right)
+void merge(int *left, int *right, int* arr, int len1, int len2, int s)
 {
     //merge logic
     int leftIndex = 0;

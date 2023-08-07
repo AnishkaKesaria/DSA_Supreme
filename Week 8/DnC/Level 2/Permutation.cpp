@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printPermutation(string &str, int i)
+void printPermutation(string str, int i)
 {
     //base case
     if(i>=str.length())
@@ -16,6 +16,7 @@ void printPermutation(string &str, int i)
         printPermutation(str, i+1);
         //backtracking
         swap(str[i],str[j]);
+        // Agar by refrence nhi pass kiye hote string ko toh upar wale ke bina chal jaata
     }
 }
 

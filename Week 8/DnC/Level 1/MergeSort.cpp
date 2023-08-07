@@ -57,16 +57,18 @@ void merge(int *arr, int s, int e)
     }
     
     //TODO: Delete left 
+    delete[] left;
+    delete[] right;
 }
 
-int mergeSort(int* arr, int s, int e)
+void mergeSort(int* arr, int s, int e)
 {
     //base case
     //s==e -> single element
     //s>e -> invalid array
 
     if(s>=e)
-        return 0;
+        return;
     
     int mid = s + (e-s)/2;
 
