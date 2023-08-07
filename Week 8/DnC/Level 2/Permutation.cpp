@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printPermutation(string str, int i)
+void printPermutation(string &str, int i)
 {
     //base case
     if(i>=str.length())
@@ -22,7 +22,7 @@ void printPermutation(string str, int i)
 
 int main()
 {
-    string str = "abc";
+    string str = "abb";
     int i=0;
     printPermutation(str,i);
     return 0;
