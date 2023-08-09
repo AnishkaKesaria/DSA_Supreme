@@ -1,7 +1,7 @@
-int i = row;
-    while(i>=0)
-    {
-        if(board[i][col]==1)
-            return false;
-        i--;
-    }
+for(int i=0; i<n; i++)
+        // {
+        //     for(int j=0; j<n; j++)
+        //     {
+        //         board[i][j] = '.';
+        //     }
+        // }
